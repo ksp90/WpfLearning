@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_UserControlCustomControl", "05_UserControlCustomControl\05_UserControlCustomControl.csproj", "{886CC310-D5A4-4CFE-BA49-4F32D83254A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCustomControl", "MyCustomControl\MyCustomControl.csproj", "{8B2F9BEC-4FBC-42EA-90C5-235AF4580251}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{886CC310-D5A4-4CFE-BA49-4F32D83254A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886CC310-D5A4-4CFE-BA49-4F32D83254A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886CC310-D5A4-4CFE-BA49-4F32D83254A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886CC310-D5A4-4CFE-BA49-4F32D83254A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2F9BEC-4FBC-42EA-90C5-235AF4580251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2F9BEC-4FBC-42EA-90C5-235AF4580251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2F9BEC-4FBC-42EA-90C5-235AF4580251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2F9BEC-4FBC-42EA-90C5-235AF4580251}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23263351-4766-4117-B984-E356D5432E61}
+	EndGlobalSection
+EndGlobal
