@@ -1,0 +1,32 @@
+﻿<Window x:Class="_10_Tooltip.BasicTooltip"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10_Tooltip"
+        mc:Ignorable="d"
+        Title="BasicTooltip" Height="300" Width="300">
+    <Grid>
+        <!--Example 1-->
+        <Button Content="Submit" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button.ToolTip>
+                <ToolTip>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold">Submit Request</TextBlock>
+                        <TextBlock>Submits the request to the server.</TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        
+        <!--Example 2-->
+        <Button IsEnabled="False" ToolTip="Saves the current document"
+            ToolTipService.ShowOnDisabled="True" Content="Save" HorizontalAlignment="Center" VerticalAlignment="Center">
+        </Button>
+        
+        <!--Example 3-->
+        <Button ToolTip="Saves the current document" ToolTipService.ShowDuration="20"
+            Content="Save" HorizontalAlignment="Center" VerticalAlignment="Center">
+        </Button>
+    </Grid>
+</Window>
