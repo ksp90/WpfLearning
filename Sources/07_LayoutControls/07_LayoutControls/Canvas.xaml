@@ -1,0 +1,41 @@
+﻿<!--http://www.wpf-tutorial.com/panels/canvas/-->
+<Window x:Class="_07_LayoutControls.Canvas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_07_LayoutControls"
+        mc:Ignorable="d"
+        Title="Canvas" Height="300" Width="300">
+    <Grid>
+        <!--Example 1-->
+        <Canvas>
+            <Button>Button 1</Button>
+            <Button>Button 2</Button>
+        </Canvas>
+        
+        <!--Example 2-->
+        <!--<Canvas>
+            <Button Canvas.Left="15">Top left Button</Button>
+            <Button Canvas.Right="15">Top right Button</Button>
+            <Button Canvas.Left="15" Canvas.Bottom="15">Bottom left Button</Button>
+            <Button Canvas.Right="15" Canvas.Bottom="15">Bottom right Button</Button>
+        </Canvas>-->
+        
+        <!--Example 3-->
+        <!--<Canvas>
+            <Ellipse Fill="LightGray" Canvas.Left="25" Canvas.Top="25" Width="200" Height="200" />
+            <Rectangle Fill="LightBlue" Canvas.Left="25" Canvas.Top="25" Width="50" Height="50" />
+            <Rectangle Fill="LightGreen" Canvas.Left="50" Canvas.Top="50" Width="50" Height="50" />
+            <Rectangle Fill="LightCyan" Canvas.Left="75" Canvas.Top="75" Width="50" Height="50" />
+        </Canvas>-->
+        
+        <!--Example 4-->
+        <!--<Canvas>
+            <Ellipse Panel.ZIndex="2" Fill="LightGray" Canvas.Left="25" Canvas.Top="25" Width="200" Height="200" />
+            <Rectangle Panel.ZIndex="3" Fill="LightBlue" Canvas.Left="25" Canvas.Top="25" Width="50" Height="50" />
+            <Rectangle Panel.ZIndex="2" Fill="LightGreen" Canvas.Left="50" Canvas.Top="50" Width="50" Height="50" />
+            <Rectangle Panel.ZIndex="4" Fill="LightCyan" Canvas.Left="75" Canvas.Top="75" Width="50" Height="50" />
+        </Canvas>-->
+    </Grid>
+</Window>

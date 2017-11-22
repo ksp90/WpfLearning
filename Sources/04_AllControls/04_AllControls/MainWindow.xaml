@@ -6,11 +6,40 @@
         xmlns:local="clr-namespace:_04_AllControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Auto">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+        <ScrollViewer Grid.Column="1">
+            <StackPanel Height="1000" Orientation="Vertical" >
+                <Label Content="Test Label"/>
+                <TextBlock Text="Test TextBlock"/>
+                <TextBox Text="Test TextBox"/>
+                <Button Content="Test Button"/>
+                <CheckBox Content="Test CheckBox"/>
+                <Calendar/>
+                <ComboBox>
+                    <ComboBoxItem>Option 1</ComboBoxItem>
+                    <ComboBoxItem>Option 2</ComboBoxItem>
+                </ComboBox>
+                <DatePicker/>
+                <ListBox>
+                    <ListBoxItem>Option 1</ListBoxItem>
+                    <ListBoxItem>Option 2</ListBoxItem>
+                </ListBox>
+                <ListView>
+                    <ListViewItem>Option 1</ListViewItem>
+                    <ListViewItem>Option 2</ListViewItem>
+                </ListView>
+                <Image Source="ibm.png" Height="100" />
+                <PasswordBox/>
+                <Slider Minimum="0" Maximum="100"/>
+                <RadioButton Content="Radio 1" GroupName="Test"/>
+                <RadioButton Content="Radio 2" GroupName="Test"/>
+                <Expander/>
+                <MediaElement/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
