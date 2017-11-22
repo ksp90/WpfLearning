@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_RoutedEvent", "11_RoutedEvent\11_RoutedEvent.csproj", "{98790BC2-6A66-416F-9273-CB1CB8458674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCustomControl", "MyCustomControl\MyCustomControl.csproj", "{7417D7FE-AB15-493D-AF8E-19BF6CF605A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98790BC2-6A66-416F-9273-CB1CB8458674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98790BC2-6A66-416F-9273-CB1CB8458674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98790BC2-6A66-416F-9273-CB1CB8458674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98790BC2-6A66-416F-9273-CB1CB8458674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7417D7FE-AB15-493D-AF8E-19BF6CF605A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7417D7FE-AB15-493D-AF8E-19BF6CF605A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7417D7FE-AB15-493D-AF8E-19BF6CF605A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7417D7FE-AB15-493D-AF8E-19BF6CF605A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50E1BA8F-8316-490A-AE10-0DA7EB2253A8}
+	EndGlobalSection
+EndGlobal
