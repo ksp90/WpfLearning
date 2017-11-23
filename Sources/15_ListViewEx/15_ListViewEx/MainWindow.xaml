@@ -1,0 +1,39 @@
+﻿<Window x:Class="_15_ListViewEx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_15_ListViewEx"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!--Example 1-->
+        <!--<ListView Margin="10">
+            <ListViewItem>Item 1</ListViewItem>
+            <ListViewItem IsSelected="True">Item 2</ListViewItem>
+            <ListViewItem>Item 3</ListViewItem>
+        </ListView>-->
+        
+        <!--Example 2-->
+        <ListView Margin="10">
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Width="10" Height="10" Fill="Red"/>
+                    <TextBlock>Green</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Width="10" Height="10" Fill="Green"/>
+                    <TextBlock>Blue</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem IsSelected="True">
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse Width="10" Height="10" Fill="Blue"/>
+                    <TextBlock>Red</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+        </ListView>
+    </Grid>
+</Window>
