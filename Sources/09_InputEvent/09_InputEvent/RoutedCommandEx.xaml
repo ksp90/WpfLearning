@@ -6,6 +6,11 @@
         xmlns:local="clr-namespace:_09_InputEvent"
         mc:Ignorable="d"
         Title="RoutedCommandEx" Height="300" Width="300">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.New" CanExecute="CanNew" Executed="NewExecuted" />
+        <CommandBinding Command="ApplicationCommands.Open" CanExecute="CanOpen" Executed="OpenExecuted" />
+        <CommandBinding Command="ApplicationCommands.Save" CanExecute="CanSave" Executed="SaveExecuted" />
+    </Window.CommandBindings>
     <Grid>
         <Grid>
             <StackPanel x:Name = "stack" Background = "Transparent">
