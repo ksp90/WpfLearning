@@ -1,0 +1,19 @@
+﻿<Window x:Class="_22_ConverterEx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_22_ConverterEx"
+        xmlns:converter="clr-namespace:_22_ConverterEx.Converters"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <converter:BooleanToBrushConverter TrueBrush="Green" FalseBrush="Red" DefaultBrush="Gray" x:Key="BooleanToBrushConverter" />
+    </Window.Resources>
+    <Grid Margin="50" Background="{Binding ElementName=chkOption, Path=IsChecked, Converter={StaticResource BooleanToBrushConverter}}">
+        <Border Visibility="{Binding ElementName=chkOption,Path=IsChecked,Converter={StaticResource BooleanToVisibilityConverter}}" 
+                BorderThickness="6"  BorderBrush="Black" ></Border>
+        <CheckBox x:Name="chkOption" Margin="50" Content="Click to change the container color and make the boarder visible"/>
+    </Grid>
+</Window>
