@@ -1,0 +1,42 @@
+﻿<Window x:Class="_24_MenuEx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_24_MenuEx"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!--example 1-->
+        <!--<DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_New" />
+                    <MenuItem Header="_Open" />
+                    <MenuItem Header="_Save" />
+                    <Separator />
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>-->
+
+        <!--Example 2-->
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+                <MenuItem Header="_Tools">
+                    <MenuItem Header="_Manage users">
+                        <MenuItem.Icon>
+                            <Image Source="user.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
+                </MenuItem>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>
+    </Grid>
+</Window>
